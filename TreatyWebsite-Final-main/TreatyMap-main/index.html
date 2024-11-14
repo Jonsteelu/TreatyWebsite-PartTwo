@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---
+      Name: Jonathan
+      Course: Web Development
+      Teacher: Ms. Hoitink
+      School: Pembina Trails Collegiate
+      Date Last Modified: 2024-10-20
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8f1a35c4bd.js"
+      crossorigin="anonymous"></script>
+
+    <style>
+      /*Setting an image as the background*/
+      .background-image {
+        background-image: url(Images/TreatyOneBackground.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+      }
+
+      /*Making styling for the information on the home page to be displayed with a semi transparent background and have the proper positioning and sizing*/
+      .info {
+        background-color: rgba(50, 50, 50, 0.95);
+        text-align: center;
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      /*Styling for a class which is used to style the link with an underline and bold.*/
+      .weightedText{
+        font-weight: bolder;
+        text-decoration: underline;
+      }
+
+      /*
+        Id for the title to have a background and positioned in the center
+        The default text color is not visible on the image as it is a light color
+        At first i tried to just make the text color the dark color to make it visible on the image
+        However when testing the site for accessibility, when you disable images this text is not visible
+        as it is the same color as the background, so instead i decided to have a dark background behind
+        the text to make it visible on the image and when you disable images you do not see this background
+        at all and only see the lighter text color.
+      */
+      #title {
+        background-color: rgba(40, 46, 48, 0.8);
+        width: 15%;
+        border-radius: 20px;
+        margin-top: 40px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!---Background image-->
+    <div class="background-image"></div>
+    
+    <header>
+      <h1 id="title">Treaty One</h1>
+    </header>
+
+    <!--Main contents of the page-->
+    <main>
+      <!--paragraph with the general information on treaty one-->
+      <p class="info">
+        Treaty One was part of the numbered treaties. It was signed on August 3, 1871, in 
+        <!--While i can technically put the class inside of the anchor i put it in a span to demenstrate that i know how to use it-->
+        <span class="weightedText">
+          <a href="nimg1.html">
+            Lower Fort Gary
+          </a>
+        </span>.
+        It was a 
+        <!--While i can technically put the class inside of the anchor i put it in a span to demenstrate that i know how to use it-->
+        <span class="weightedText">
+          <a href="treatyoneareamap.html">
+            region inside manitoba
+          </a>
+        </span> 
+        which encompassed winnipeg.
+        <!--While i can technically put the class inside of the anchor i put it in a span to demenstrate that i know how to use it-->
+        <span class="weightedText">
+          <a href="inigenoustibesinvloved.html">Seven indigenous tribes</a>
+        </span>
+        were signatories to the treaty and they compose the treaty one nation, as well as its governing council. 
+      </p>
+    </main>
+
+    <!--
+      Navigation bar for the site
+      Will make the other pages later during web project three
+    -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="treatyonecanadamap.html">Locations</a>
+      <a href="inigenoustibesinvloved.html">Indigenous Tribes Involved</a>
+      <a href="termsofthetreaty.html">Terms of the Treaty</a>
+      <a href="importanceoftreatyone.html">Importance of Treaty One</a>
+      <a href="todaysimplementation.html">Todays Implementation</a>
+    </nav>
+
+    <!--A footer for the image credit of the background image-->
+    <footer>
+      <h5>
+        Image credit of
+        <a href="https://treaty1.ca/treaty-no-1/" class="default-link"
+          >Treaty NO.1</a
+        >
+        <br />
+        Information source:
+        <a href="https://treaty1.ca/treaty-one-nation/" class="default-link">Treaty One Nation</a>
+      </h6>
+    </footer>
+  </body>
+</html>

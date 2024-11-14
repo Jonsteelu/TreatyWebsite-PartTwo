@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todays Implementation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8f1a35c4bd.js"
+      crossorigin="anonymous"></script>
+
+    <style>
+      /*Making styling for the information on the home page to be displayed with a semi transparent background and have the proper positioning and sizing*/
+      .info {
+        background-color: rgba(50, 50, 50, 0.95);
+        text-align: center;
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: -200px;
+      }
+
+      /*Styling for a class which is used to style the link with an underline and bold.*/
+      .weightedText {
+        font-weight: bolder;
+        font-style: italic;
+      }
+
+      header {
+        position: relative; /* Change position to relative to contain absolute positioned elements */
+      }
+
+      #title {
+        margin: 40px auto; /* Center the title horizontally with margin */
+        text-align: center;
+        padding: 10px;
+      }
+
+      .pdf {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Todays Implementation</h1>
+    </header>
+
+    <!--Main contents of the page-->
+    <main>
+      <p class="info">
+        One example of todays implementation of treaty one is the propossed
+        "former Kapyong Barracks Master Plan." It is a plan for a large scale
+        redevelopment of the land, and a "landmark project." It is meant as a
+        plan to merge
+        <span class="weightedText"
+          >"the former Kapyong Barracks back into the urban fabric, creating new
+          connections into the surrounding Tuxedo and River Heights
+          neighbourhoods."</span
+        >
+      </p>
+      <figure class="pdf">
+        <figcaption>The former Kapyong Barracks Master Plan PDF</figcaption>
+        <a
+          href="https://treaty1.ca/wp-content/uploads/2021/11/Kapyong-Barracks-Master-Plan.pdf"
+          class="default-link"
+          >View the full PDF here</a
+        >
+        <br />
+        <iframe
+          src="https://treaty1.ca/wp-content/uploads/2021/11/Kapyong-Barracks-Master-Plan.pdf"
+          width="50%"
+          height="450px"
+          style="border: none"></iframe>
+      </figure>
+    </main>
+
+    <footer>
+      <h5>
+        <br />
+        Information source:
+        <a href="https://treaty1.ca/naawi-oodena/" class="default-link">
+          Treaty 1 Naawi-Oodena Master Plan</a>
+      </h6>
+    </footer>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="treatyonecanadamap.html">Locations</a>
+      <a href="inigenoustibesinvloved.html">Indigenous Tribes Involved</a>
+      <a href="termsofthetreaty.html">Terms of the Treaty</a>
+      <a href="importanceoftreatyone.html">Importance of Treaty One</a>
+      <a href="todaysimplementation.html">Todays Implementation</a>
+    </nav>
+  </body>
+</html>

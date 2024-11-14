@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Map of Canada</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8f1a35c4bd.js"
+      crossorigin="anonymous"></script>
+    <style>
+      /*Styling for the unordered list for the things shown on the map*/
+      ul {
+        text-align: left;
+        color: #dbdbdb;
+        margin-left: 15px;
+        margin-top: -15px;
+      }
+
+      /*Styling for the discriptive deffintion that is inside the un ordered list to say where the place of negotiation is*/
+      dd {
+        margin-left: 20px;
+        margin-top: -15px;
+        font-size: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--The header of the page-->
+    <header>
+      <h1>Treaty One Territory Location</h1>
+    </header>
+
+    <!--Main content of the page-->
+    <main>
+      <!--Section containing the map-->
+      <section>
+        <!--Figure for the map-->
+        <figure>
+          <img
+            src="Images/TreatyOneAreaMap.png"
+            class="map"
+            alt="A map of manitoba with a highlight of Treaty One Territory and local Indigenous tribes, 
+            as well as Winnipeg and the place of negotiation of the the treaty which is lower fort gary" />
+          <!--Figure caption for credit of the image and what it was based on-->
+          <figcaption>
+            Image credit of Jonathan. Based on map from
+            <a
+              href="https://www.instagram.com/treatyone/p/C7ucgBLpa41/"
+              class="default-link"
+              >treatyone's Instagram post</a
+            >.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <!--Aside for navigation of the locations-->
+    <aside>
+      <!--Div for the legend navigation-->
+      <div class="legend">
+        <h2>Scale</h2>
+        <!--Div for the buttons to scale in or out-->
+        <div class="buttons">
+          <!--Link to scale in to the place of negotiation-->
+          <a href="nimg1.html">
+            <i class="fa-solid fa-plus fa-2xl" id="PlusButton"></i>
+          </a>
+          <!--Link to scale out to the canada map-->
+          <a href="treatyonecanadamap.html">
+            <i class="fa-solid fa-minus fa-2xl" id="MinusButton"></i>
+          </a>
+        </div>
+        <!--Link to treaty one canada map-->
+        <a href="treatyonecanadamap.html">
+          <h4>Treaty One Canada Map</h4>
+        </a>
+        <!--Link to treaty one area map with the class curMap to make the text color different to indicate it is the current page-->
+        <a href="treatyoneareamap.html">
+          <h4 class="curMap">Treaty One Area Map</h4>
+        </a>
+        <!--An unordered list for the three things that are shown on the map-->
+        <ul>
+          <!--Using in line styling as it is only one thing that is being changed in each list item-->
+          <a href="inigenoustibesinvloved.html"
+            ><li style="list-style-type: circle">Indigenous Tribes</li></a
+          >
+          <li style="list-style-type: disc">Winnipeg</li>
+          <li style="list-style-type: square">Place of Negotiation</li>
+          <!--Using a description list to give a sub discription of what the place of negotiation was-->
+          <dl><dd>(Lower Fort Gary)</dd></dl>
+        </ul>
+        <!--Link to the place of negotiation images-->
+        <a href="nimg1.html">
+          <h4>Place of Negotiation Images</h4>
+        </a>
+      </div>
+    </aside>
+
+    <!--
+      Navigation bar for the site
+      Will make the other pages later during web project three
+    -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="treatyonecanadamap.html">Locations</a>
+      <a href="inigenoustibesinvloved.html">Indigenous Tribes Involved</a>
+      <a href="termsofthetreaty.html">Terms of the Treaty</a>
+      <a href="importanceoftreatyone.html">Importance of Treaty One</a>
+      <a href="todaysimplementation.html">Todays Implementation</a>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8f1a35c4bd.js"
+      crossorigin="anonymous"></script>
+    <style>
+      /*This internal styling overwrites the external styling for icons just for the positioning of the ones on this page*/
+      i {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--The header of the page-->
+    <header>
+      <h1>Treaty One Territory Location</h1>
+    </header>
+
+    <!--Main content of the page-->
+    <main>
+      <!--Section containing the images-->
+      <section>
+        <!--
+          Div for the lower fort garry container
+          Here i use many pages to display all images with links to the previous and next page.
+          In a actually website a javascript script would be use to cycle through the images.
+          However we have not learnt this yet so i did it in a way that i can configure myself.
+        -->
+        <div class="lfg-container">
+          <!--div for the left arrow-->
+          <div class="Larrow">
+            <!--Link to the previous image-->
+            <a href="nimg6.html"
+              ><i
+                class="fa-solid fa-arrow-left fa-2xl"
+                style="color: rgb(50, 50, 50)"></i
+            ></a>
+          </div>
+          <!--Figure in between the two arrows-->
+          <figure>
+            <!--Figure caption for where the image was taken from and copyright-->
+            <figcaption>
+              Image taken from
+              <!--Link to where image was taken from-->
+              <a
+                href="https://redrivernorthheritage.com/media-category/lower-fort-garry/"
+                class="default-link">
+                Red River North Heritage
+              </a>
+              <!--Using html entity for the copyright symbol-->
+              &#169;RM of St. Clements
+            </figcaption>
+            <!--The actual image being displayed with the proper alt-->
+            <img
+              class="lfgImgs"
+              src="Images/LowerFortGary/1847-244-LowerFtGarrySketch.jpg"
+              alt="An 1847 sketch of Lower Fort Garry from across the Red River. Several houses can be seen surrounded by the fort walls." />
+          </figure>
+          <!--Link to the next image-->
+          <div class="Rarrow">
+            <a href="nimg2.html"
+              ><i
+                class="fa-solid fa-arrow-right fa-2xl"
+                style="color: rgb(50, 50, 50)"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!--Aside for navigation of the locations-->
+      <aside>
+        <!--Div for the legend navigation-->
+        <div class="legend">
+          <h2>Scale</h2>
+          <!--Div for the buttons to scale in or out-->
+          <div class="buttons">
+            <!--Link to scale in is empty as it is the most scaled in option-->
+            <a href="">
+              <i class="fa-solid fa-plus fa-2xl" id="PlusButton"></i>
+            </a>
+            <!--Link to scale out to the province map-->
+            <a href="treatyoneareamap.html">
+              <i class="fa-solid fa-minus fa-2xl" id="MinusButton"></i>
+            </a>
+          </div>
+          <!--Link to treaty one canada map-->
+          <a href="treatyonecanadamap.html">
+            <h4>Treaty One Canada Map</h4>
+          </a>
+          <!--Link to treaty one area map-->
+          <a href="treatyoneareamap.html">
+            <h4>Treaty One Area Map</h4>
+          </a>
+          <!--Link to the place of negotiation images with the class curMap to make the text color different to indicate it is the current page-->
+          <a href="nimg1.html">
+            <h4 class="curMap">Place of Negotiation Images</h4>
+          </a>
+        </div>
+      </aside>
+    </main>
+
+    <!--
+      Navigation bar for the site
+      Will make the other pages later during web project three
+    -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="treatyonecanadamap.html">Locations</a>
+      <a href="inigenoustibesinvloved.html">Indigenous Tribes Involved</a>
+      <a href="termsofthetreaty.html">Terms of the Treaty</a>
+      <a href="importanceoftreatyone.html">Importance of Treaty One</a>
+      <a href="todaysimplementation.html">Todays Implementation</a>
+    </nav>
+  </body>
+</html>

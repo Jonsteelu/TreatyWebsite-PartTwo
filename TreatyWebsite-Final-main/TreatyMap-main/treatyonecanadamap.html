@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Map of Canada</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8f1a35c4bd.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--The header of the page-->
+    <header>
+      <h1>Treaty One Territory Locations</h1>
+    </header>
+
+    <!--Main content of the page-->
+    <main>
+      <!--Section containing the map-->
+      <section>
+        <!--Figure for the map-->
+        <figure>
+          <img
+            src="Images/TreatyOneCanadaMap.png"
+            class="map"
+            alt="A map of treaty one territory in the wider context of canada" />
+          <!--Figure caption for credit of the image and what it was based on-->
+          <figcaption>
+            Image credit of Jonathan. Based on various maps of the numbered
+            treaties.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <!--Aside for navigation of the locations-->
+    <aside>
+      <!--Div for the legend navigation-->
+      <div class="legend">
+        <h2>Scale</h2>
+        <!--Div for the buttons to scale in or out-->
+        <div class="buttons">
+          <!--Link to scale in to the area map-->
+          <a href="treatyoneareamap.html">
+            <i class="fa-solid fa-plus fa-2xl" id="PlusButton"></i>
+          </a>
+          <!--Link to scale out is empty as it is the most scaled out option-->
+          <a href="">
+            <i class="fa-solid fa-minus fa-2xl" id="MinusButton"></i>
+          </a>
+        </div>
+        <!--Link to treaty one canada map with the class curMap to make the text color different to indicate it is the current page-->
+        <a href="treatyonecanadamap.html">
+          <h4 class="curMap">Treaty One Canada Map</h4>
+        </a>
+        <!--Link to treaty one area map-->
+        <a href="treatyoneareamap.html">
+          <h4>Treaty One Area Map</h4>
+        </a>
+        <!--Link to the place of negotiation images-->
+        <a href="nimg1.html">
+          <h4>Place of Negotiation Images</h4>
+        </a>
+      </div>
+    </aside>
+
+    <!--
+      Navigation bar for the site
+      Will make the other pages later during web project three
+    -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="treatyonecanadamap.html">Locations</a>
+      <a href="inigenoustibesinvloved.html">Indigenous Tribes Involved</a>
+      <a href="termsofthetreaty.html">Terms of the Treaty</a>
+      <a href="importanceoftreatyone.html">Importance of Treaty One</a>
+      <a href="todaysimplementation.html">Todays Implementation</a>
+    </nav>
+  </body>
+</html>

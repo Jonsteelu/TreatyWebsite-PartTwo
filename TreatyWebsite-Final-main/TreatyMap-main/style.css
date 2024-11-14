@@ -1,0 +1,207 @@
+/*
+  Here i have css classes for things that are not in all html documents but that are at least in two
+  I used internal css only for things that only are needed for that one document.
+*/
+
+/*Styling for the body of all html documents in the project*/
+body {
+  font-family: Arial, Impact, "Gill Sans", "Arial Narrow Bold", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(50, 50, 50);
+}
+
+/*Styling for the header of all html documents in the project*/
+header {
+  text-align: center;
+}
+
+/*Syling for the h1 through h6 and paragraph element of all html documents in the project(Setting color for text in project)*/
+h5,
+h6,
+p,
+li,
+dd {
+  color: #dbdbdb;
+  font-size: 18px;
+  line-height: 22.5px; /* Set line height for better readability */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 25px;
+  color: #dbdbdb;
+}
+
+/*Styling for the legend (the mini nav bar for locations titled scale) for all html documents in the prokect*/
+.legend {
+  position: absolute;
+  margin-left: 200px;
+  /*Centering*/
+  transform: translate(-50%, -50%);
+  top: 50%;
+  text-align: center;
+  background-color: #e06c3a;
+  width: 200px;
+  /*Rounding corners*/
+  border-radius: 20px;
+}
+
+/*class for the buttons (the ones in the legend for scaling plus and minus)*/
+.buttons {
+  background-color: #303030;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+/*Styling for the anchors (links) for all html documents in the prokect*/
+a {
+  /*removing text decoration for links*/
+  text-decoration: none;
+  /*Leaving the default text color*/
+  color: inherit;
+  /*Adding a transiotion for when you hover over the link and it changes opacity*/
+  transition: color 0.3s, opacity 0.3s;
+}
+a:hover {
+  /*Chanign opacity when link are hovered over to indicate that it is clickable*/
+  opacity: 0.5;
+}
+
+/*A default link class for link in the fig captions which are blue and underlined (like default links)*/
+.default-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+/*Class for the current map to darken the color of the current page in the legend*/
+.curMap {
+  color: #303030;
+}
+
+/*Class for color and size of the arrows to go the previous and next image*/
+.Larrow,
+.Rarrow {
+  background-color: #e06c3a;
+  width: 40px;
+  height: 30px;
+  border-radius: 20px;
+}
+/*Positioning of each indivdual arrow*/
+.Larrow {
+  margin-left: 400px;
+}
+.Rarrow {
+  margin-right: 400px;
+}
+
+/*clas for the lower fort garry images to make them the right size and scalable*/
+.lfgImgs {
+  /*90 viewport height*/
+  width: 90vh;
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Container for the lower fort garry images and fig captions to position in the right spot*/
+.lfg-container {
+  top: 50%;
+  transform: translate(0, 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Stying for fig captions through all html documents in the project*/
+figcaption {
+  color: #dbdbdb;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/*Class for adjusting the location of only the figure captions of the maps*/
+.mapFigCaps {
+  bottom: 0;
+}
+/*Class for centering the maps and setting the sizes for them*/
+.map {
+  /*90 view port height*/
+  width: 85vh;
+  max-width: 230%;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  height: auto;
+  margin-top: 2%;
+}
+
+/*Id for the plus button for scaling (using and id since it is only used once in each html file)*/
+#PlusButton {
+  margin-top: 15px;
+  color: #e06c3a;
+  float: left;
+  margin-left: 15px;
+}
+/*Id for the minus button for scaling (using and id since it is only used once in each html file)*/
+#MinusButton {
+  margin-top: 15px;
+  color: #e06c3a;
+  float: right;
+  margin-right: 15px;
+}
+
+/*Styling for the navigation bar for all html documents in the prokect*/
+nav {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  /*100 viewport height (from top to bottom)*/
+  height: 100vh;
+  width: 125px;
+  text-align: center;
+  justify-content: center;
+  /*Semi transparent*/
+  background-color: #e06c3a;
+  /*Transition for the width when hovered over*/
+  transition: width 0.5s;
+  /*On top of everything*/
+  z-index: 999;
+}
+/*When the nav bar is hovered over it widens*/
+nav:hover {
+  width: 200px;
+}
+
+/*Styling for the anchors that are in the navigation bar only*/
+nav a {
+  display: block;
+  padding: 10px;
+  color: #dbdbdb;
+  text-decoration: none;
+}
+/*Styling for the anchors that are in the navigation bar only when they are hovered over*/
+nav a:hover {
+  background-color: rgb(50, 50, 50);
+  opacity: 1;
+}
+
+/*Making styling for the footer to be semi transparent and have proper positioning*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.85);
+  text-align: center;
+  padding: -5px, 0;
+}

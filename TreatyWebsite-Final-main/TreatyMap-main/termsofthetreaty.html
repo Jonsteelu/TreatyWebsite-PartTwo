@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>terms of the treaty</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8f1a35c4bd.js"
+      crossorigin="anonymous"></script>
+
+    <style>
+      .background-image {
+        background-image: url(https://i0.wp.com/canadaehx.com/wp-content/uploads/2021/07/NEP5565626.jpg?fit=2048%2C1341&ssl=1);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+      }
+
+      /*Making styling for the information on the home page to be displayed with a semi transparent background and have the proper positioning and sizing*/
+      .info {
+        background-color: rgba(50, 50, 50, 0.95);
+        text-align: center;
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      /*Styling for a class which is used to style the link with an underline and bold.*/
+      .weightedText{
+        font-weight: bolder;
+        text-decoration: underline;
+      }
+
+      /*
+        Id for the title to have a background and positioned in the center
+        The default text color i3 not visible on the image as it is a light color
+        At first i tried to just make the text color the dark color to make it visible on the image
+        However when testing the site for accessibility, when you disable images this text is not visible
+        as it is the same color as the background, so instead i decided to have a dark background behind
+        the text to make it visible on the image and when you disable images you do not see this background
+        at all and only see the lighter text color.
+      */
+      #title {
+        background-color: rgba(50, 50, 50, 0.85);
+        width: 25%;
+        border-radius: 20px;
+        margin-top: 40px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>    
+    <!---Background image-->
+    <div class="background-image"></div>
+    <header>
+      <h1 id="title">Terms Of Treaty One</h1>
+    </header>
+
+    <!--Main contents of the page-->
+    <main>
+      <!--paragraph with the general information on treaty one-->
+      <p class="info">
+        Treaty One included many terms that were agreed between the Indigenous people and the Canadian Government Agents. 
+        <br />
+        <br />
+        <span style="font-weight: bolder;">For terms that the Canadian government had to follow:</span>
+        <br />
+        One term that was included was that each family of five was to recieve at least 160 acres of land. As well each band
+        was to recieve a reserve large enough to provide this land for families. Another term was that each person was to recieve 
+        a one time payment of $3, and each family to recieve $15 every year. It was also promised that a school would be built
+        and maintained by the government.
+        <br />
+        <br />
+        <span style="font-weight: bolder;">For terms that the indigenous people had to follow:</span>
+        <br />
+        On the part of the indigenous people they had to "cede, release, surrender, and yield up to her Majesty the Queen” an 
+        ammount of land that is located southeast and south-central Manitoba, stretching to the southern parts of lake Manitoba
+        and lake winnipeg.
+      </p>
+    </main>
+
+    <!--
+      Navigation bar for the site
+      Will make the other pages later during web project three
+    -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="treatyonecanadamap.html">Locations</a>
+      <a href="inigenoustibesinvloved.html">Indigenous Tribes Involved</a>
+      <a href="termsofthetreaty.html">Terms of the Treaty</a>
+      <a href="importanceoftreatyone.html">Importance of Treaty One</a>
+      <a href="todaysimplementation.html">Todays Implementation</a>
+    </nav>
+
+    <!--A footer for the image credit of the background image-->
+    <footer>
+      <h5>
+        Image credit of
+        <a href="https://canadaehx.com/2021/07/15/the-numbered-treaties/" class="default-link"
+          >Canadian History Ehx</a
+        >
+        <br />
+        Information source:
+        <a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2" class="default-link">
+          The Canadian Encyclopedia</a>
+      </h6>
+    </footer>
+  </body>
+</html>
